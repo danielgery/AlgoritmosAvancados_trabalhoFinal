@@ -1,7 +1,8 @@
 # AlgoritmosAvancados_trabalhoFinal
 Enunciado: O exercício de avaliação será composto por uma composição de alguns dos exercícios desenvolvidos até agora. São eles (os enunciados completos estão marcados com *** n *** no moodle):
 
-*** 1 *** Divisão e Conquista / Programação Dinâmica- Algoritmo Experimental
+*** 1 *** Divisão e Conquista / Programação Dinâmica- Algoritmo Experimental: 
+https://github.com/PUCRS-Poli-ES-ALAV/4-divisao-e-conquista-exercicio-preparatorio-israeldeorce_danielgery
 
 *** 2 *** Programação Dinamica - Algoritmos da Mochila 
 
