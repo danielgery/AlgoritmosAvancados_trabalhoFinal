@@ -5,28 +5,28 @@ public class app {
 	public static void main(String[] args) {
 	}
 
-	public static long mochilabrec(ArrayList<Double> p, ArrayList<Double> u, int n, double m) {
+	public static long mochilabrec(
+			ArrayList<Double> p, //pesos
+			ArrayList<Double> u, //utilidades
+			int n, 
+			double m //mochila
+			) {
 
-		if (n == -1) {
+		if (n == -1)
 			return 0;
-		} else {
-			long a = mochilabrec(p, u, n - 1, m);
-			if (p.get(n) > m) {
-				return a;
-			} else {
-				long b = (long) (u.get(n) + mochilabrec(p, u, n - 1, m - p.get(n)));
-				return max(a, b);
-			}
-		}
+
+		long a = mochilabrec(p, u, n - 1, m);
+		
+		if (p.get(n) > m)
+			return a;
+
+		long b = (long) (u.get(n) + mochilabrec(p, u, n - 1, m - p.get(n)));
+		return max(a, b);
 
 	}
 
 	public static long max(long a, long b) {
-		if (a > b) {
-			return a;
-		} else {
-			return b;
-		}
-
+		return a > b ? a : b;
 	}
+
 }
